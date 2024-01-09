@@ -25,6 +25,7 @@ module.exports = {
         sky: colors.sky[500],
         amber: colors.amber[500],
         red: colors.red[500],
+        blue:colors.blue[500],
       },
     },
     extend: {

@@ -90,34 +90,63 @@ export const Features = () => {
         <Text center>
           <Title size="md">
             <GradientText className="amber-red">
-              &quot;Just right&quot;
+              What is Cyber Cypher?
             </GradientText>{" "}
-            in seconds.
           </Title>
-          <Details>Test styling and update code right in your browser.</Details>
+          <Details>
+            The goal of the 18-hour hackathon Cyber Cypher is to provide
+            aspiring and seasoned programmers a platform. Our aim is to reach
+            engineering students across all skill levels, from those with little
+            coding experience to those with extensive knowledge. Cyber Cypher
+            aims to awaken in the participants the boundless potential that this
+            dynamic field of computer sciences holds for them—potential that
+            currently lies dormant.
+          </Details>
         </Text>
-   
+      </FeatureSection>
+      <FeatureSection grayer center>
+        <Text center>
+          <Title size="md">
+            <GradientText className="pink-blue">
+              What is Taqneeq Fest?
+            </GradientText>{" "}
+          </Title>
+          <Details>
+            With three exciting and action-packed days in a row, Taqneeq has
+            grown into an extraordinary tech festival over the years. It has
+            successfully organized numerous noteworthy events, including The
+            Talk, Unstop, the Internship Fair, the Game Development Workshop,
+            and Light Reaction, to mention a few. Taqneeq has illuminated every
+            aspect of technology.
+          </Details>
+        </Text>
       </FeatureSection>
       {/* Feature 2 */}
       <FeatureSection right>
         <Text>
           <Title size="md">
-            <GradientText className="pink-blue">Resize</GradientText>
-            <br /> with a click.
+            <GradientText className="green-sky">Healthcare</GradientText>
           </Title>
-          <Details>Just drag to resize and realign components.</Details>
+          <Details>
+            The importance of UI/UX in healthcare applications rests in its
+            capacity to carefully strike a balance between user-centric design
+            and technological functioning, promoting improved accessibility,
+            user-friendly navigation, and increased user engagement in general
+            for a more effective healthcare experience.
+          </Details>
         </Text>
-    
       </FeatureSection>
       {/* Feature 3 */}
       <FeatureSection grayer>
         <Text>
           <Title size="md">
-            <GradientText className="green-sky">Smart commands</GradientText>
-            <br /> cut the guesswork.
+            <GradientText className="purple-teal">Deep Learning</GradientText>
           </Title>
           <Details>
-            Vivid smart commands apply the right styles every time.
+            A branch of machine learning called "deep learning" focuses on
+            teaching artificial neural networks to see patterns and make wise
+            choices. Utilize Fetch.ai to create novel answers while you work
+            through an advanced problem statement's complexities{" "}
           </Details>
         </Text>
       </FeatureSection>

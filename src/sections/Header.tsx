@@ -2,11 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
-
-import { Button } from "../components/Button";
 import { GradientText } from "../components/GradientText";
-import { LinkButton } from "../components/LinkButton";
-import { Moon, Sun } from "../svg/DarkModeIcons";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -31,48 +27,66 @@ export const Header = ({
   // Clean up stale dark mode
   useEffectOnce(() => setReloaded(true));
 
-  const goToEmail = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
 
   const Logo = () => (
     <Link href="/">
       <div className="items-center block gap-1 row">
-        <Image src="/images/logo.png" alt="Vivid logo" height="40" width="40" />
+        <Image src="/images/logo.png" alt="Vivid logo" height="60" width="60" />
         <div className="text-3xl font-bold">
-          <GradientText className="pink-blue">Vivid</GradientText>
+          <GradientText className="amber-red">Cyber Cypher 3.0</GradientText>
         </div>
       </div>
     </Link>
   );
 
-  const Navigation = () => (
-    <nav>
-      <ul className="items-center gap-2 row">
-        {reloaded ? ( // Only show after first reload
-          <li>
-            <LinkButton
-              button
-              onClick={toggleDarkMode}
-              title="Toggle dark mode"
-              aria-label="Toggle dark mode"
-            >
-              {isDarkMode ? <Moon /> : <Sun />}
-            </LinkButton>
-          </li>
-        ) : null}
-        <li>
-          <LinkButton href="/">Docs</LinkButton>
-        </li>
-        <li className={`transition ${!nextSection && "hidden"}`}>
-          <Button onClick={goToEmail}>Waitlist</Button>
-        </li>
-      </ul>
-    </nav>
-  );
+  const Navigation = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+
+    return (
+      <nav>
+        <div className="flex items-center justify-between">
+          <div className="block md:hidden">
+            <button onClick={toggleMenu}>
+              <svg
+                className="w-6 h-6 fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {isOpen ? (
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 4H4v2h16v-2z"
+                  />
+                ) : (
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+          <ul
+            className={`${
+              isOpen ? "flex flex-col items-center h-screen" : "hidden"
+            } lg:flex lg:items-center lg:gap-8 lg:text-2xl lg:row`}
+          >
+            <li>About Us</li>
+            <li>Schedule</li>
+            <li>CC 2.0</li>
+            <li>TQ 16.0</li>
+          </ul>
+        </div>
+      </nav>
+    );
+  };
 
   return (
     // Colors must be set explicitly since opacity and blur don't work together
