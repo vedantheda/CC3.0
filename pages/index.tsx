@@ -5,6 +5,7 @@ import { Header } from "../src/sections/Header";
 import { Hero } from "../src/sections/Hero";
 import { Newsletter } from "../src/sections/Newsletter";
 import { Testimonials } from "../src/sections/Testimonials";
+import { AnimatedGradient } from "../src/components/AnimatedGradient";
 
 const Home = ({
   isDarkMode,
@@ -16,8 +17,11 @@ const Home = ({
   return (
     <div className="overflow-hidden col text-strong">
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+    
       <main>
-        <Hero />
+      <div className="h-[80vh]">
+      <AnimatedGradient/>
+      </div>
         <Features />
         <FeatureBlocks />
         <Testimonials />

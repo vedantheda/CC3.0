@@ -96,13 +96,7 @@ export const Features = () => {
           </Title>
           <Details>Test styling and update code right in your browser.</Details>
         </Text>
-        <FeatureDemo
-          webmSrc="/videos/palette.webm"
-          mp4Src="/videos/palette.mp4"
-          center
-          className="amber-red"
-          alt="A video showing Vivid's command palette functionality. The user iterates through previewed styles and applies one."
-        />
+   
       </FeatureSection>
       {/* Feature 2 */}
       <FeatureSection right>
@@ -113,13 +107,7 @@ export const Features = () => {
           </Title>
           <Details>Just drag to resize and realign components.</Details>
         </Text>
-        <FeatureDemo
-          webmSrc="/videos/resize.webm"
-          mp4Src="/videos/resize.mp4"
-          bumpLeft
-          className="pink-blue"
-          alt="A video showing Vivid's mouse resizing functionality. By dragging with a mouse, the user resizes a component."
-        />
+    
       </FeatureSection>
       {/* Feature 3 */}
       <FeatureSection grayer>
@@ -132,12 +120,6 @@ export const Features = () => {
             Vivid smart commands apply the right styles every time.
           </Details>
         </Text>
-        <FeatureDemo
-          webmSrc="/videos/center.webm"
-          mp4Src="/videos/center.mp4"
-          className="green-sky"
-          alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
-        />
       </FeatureSection>
     </>
   );
