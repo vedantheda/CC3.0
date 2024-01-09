@@ -2,11 +2,12 @@
 
 import { Variants, motion } from "framer-motion";
 
-export const AnimatedGradient = () => (
+export const AnimatedGradientR = () => (
 	<div
 		style={{
-			position: "absolute",
-			width: "100",
+			position: "relative",
+			width: "40rem",
+			height: "10rem",
 			zIndex: "-1",
 			opacity: 0.7,
 		}}
@@ -15,7 +16,7 @@ export const AnimatedGradient = () => (
 			style={{
 				position: "relative",
 				width: "500%",
-				height: "600px",
+				height: "1000px",
 				filter: "blur(60px)",
 				willChange: "filter",
 			}}
@@ -37,7 +38,7 @@ export const AnimatedGradient = () => (
 					left: 0,
 					width: "100%",
 					height: "100%",
-					backgroundColor: "rgba(24,24, 27,1 )",
+					backgroundColor: "rgba(4, 11, 36, 0.2)",
 				}}
 			/>
 		</div>
@@ -53,7 +54,7 @@ const Gradient = () => {
 			},
 			animate: {
 				fill: [...colors, colors[0]],
-				rotate: 360,
+				rotate: 180,
 				transition: {
 					repeat: Infinity,
 					duration: 10,
