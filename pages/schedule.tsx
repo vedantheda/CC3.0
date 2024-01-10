@@ -32,10 +32,10 @@ const Schedule = ({
 				<AnimatedGradient />
 				<AnimatedGradientR />{" "}
 				<div className=" md:min-h-screen max-h-screen max-h-[100svh] md:max-h-full w-full flex flex-col gap-7 md:gap-20 justify-start md:items-center md:text-center px-5 ">
-					<h1 className=" text-[4rem] md:text-[6rem] font-bold ">
+					<h1 className="  text-transparent bg-clip-text bg-gradient-to-br from-[#EE0C77] via-[#F24D56] to-[#EE0C77] text-[4rem] md:text-[8rem] font-vanguardcf font-bold tracking-wider py-10 ">
 						Our Schedule
 					</h1>
-					<div className="flex flex-row items-center pl-10 justify-between shadow-xl h-full w-fit bg-gray-900 border-l-4 border-b-4 text-left gap-8 rounded-2xl border-neon-red px-8 py-9">
+					<div className="flex flex-row items-center pl-10 justify-between shadow-xl h-full w-fit bg-gray-900 border-l-4 border-b-4 text-left gap-8 rounded-2xl border-neon-red px-14 py-9">
 						<h1 className=" text-6xl md:text-8xl font-extrabold border-r-4 pr-3">
 							01
 						</h1>
@@ -46,7 +46,7 @@ const Schedule = ({
 							</BlockText>
 						</div>
 					</div>
-					<div className="flex flex-row items-center pl-10 justify-between shadow-xl h-full w-fit bg-gray-900 border-l-4 border-b-4 text-left gap-8 rounded-2xl border-neon-red px-8 py-9">
+					<div className="flex flex-row items-center pl-10 justify-between shadow-xl h-full w-fit bg-gray-900 border-l-4 border-b-4 text-left gap-8 rounded-2xl border-neon-red px-14 py-9">
 						<h1 className=" text-6xl md:text-8xl font-extrabold border-r-4 pr-4">
 							02
 						</h1>

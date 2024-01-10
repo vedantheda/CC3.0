@@ -30,8 +30,8 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ["Avenir Next", "Helvetica Neue", "sans-serif"],
-				custom: ["vanguard"],
+				vanguardcf: "var(--font-vanguard)",
+				causten: "var(--font-causten)",
 			},
 		},
 	},

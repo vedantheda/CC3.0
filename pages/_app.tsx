@@ -8,6 +8,75 @@ import { NextSeo } from "next-seo";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 import { useEffect } from "react";
 
+import localFont from "@next/font/local";
+
+const vanguardcf = localFont({
+	src: [
+		{
+			path: "../public/fonts/vanguardcf-demibold.otf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/vanguardcf-bold.otf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/vanguardcf-extrabold.otf",
+			weight: "800",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/vanguardcf-heavy.otf",
+			weight: "900",
+			style: "normal",
+		},
+	],
+	variable: "--font-vanguard",
+});
+
+const causten = localFont({
+	src: [
+		{
+			path: "../public/fonts/Causten-Light.ttf",
+			weight: "300",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Regular.ttf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Medium.ttf",
+			weight: "500",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Semi-Bold.ttf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Bold.ttf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Extra-Bold.ttf",
+			weight: "800",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/Causten-Black.ttf",
+			weight: "900",
+			style: "normal",
+		},
+	],
+	variable: "--font-causten",
+});
+
 const siteTitle = "Cyber-Cypher";
 const siteDescription =
 	"Cyber Cypher is an 18-hour hackathon that aims to provide a platform to both budding and experienced coders alike";
@@ -59,11 +128,14 @@ const App = ({ Component, pageProps }: AppProps) => {
 					description: siteDescription,
 				}}
 			/>
-			<Component
-				{...pageProps}
-				isDarkMode={isDarkMode}
-				toggleDarkMode={toggleDarkMode}
-			/>
+			<main className={` ${vanguardcf.variable} ${causten.variable}`}>
+				{" "}
+				<Component
+					{...pageProps}
+					isDarkMode={isDarkMode}
+					toggleDarkMode={toggleDarkMode}
+				/>
+			</main>
 		</>
 	);
 };

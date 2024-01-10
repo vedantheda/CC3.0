@@ -95,7 +95,7 @@ export const Header = ({
 								href="http://taqneeqfest.com/cybercypher/register"
 								target="_blank"
 								rel="noreferrer"
-								className=" bg-neon-red p-2 rounded-xl font-bold"
+								className=" bg-[#DE2F04] p-2 rounded-xl font-bold"
 							>
 								Register
 							</Link>

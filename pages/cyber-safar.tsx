@@ -3,7 +3,8 @@ import { Title } from "../src/components/Title";
 import { Header } from "../src/sections/Header";
 import { Card } from "../src/components/Card";
 import { Text, FeatureSection } from "../src/sections/Features";
-
+import { AnimatedGradient } from "../src/components/AnimatedGradient";
+import { AnimatedGradientR } from "../src/components/AnimatedGradientright";
 // Reusable Card component
 const CardComponent = ({
 	title,
@@ -79,7 +80,8 @@ const PastCC = ({
 
 	return (
 		<>
-			<div className="overflow-hidden min-h-screen bg-gray-900 text-strong">
+			{" "}
+			<div className="overflow-hidden min-h-screen text-strong">
 				<Header
 					isDarkMode={isDarkMode}
 					toggleDarkMode={toggleDarkMode}
@@ -87,19 +89,11 @@ const PastCC = ({
 				<br />
 				{cyberCypherData.map((cyberCypher, index) => (
 					<FeatureSection grayer center key={index}>
-						<Text center>
-							<Title size="md">
-								<GradientText
-									className={
-										index === 0
-											? "purple-teal"
-											: "amber-red"
-									}
-								>
-									{cyberCypher.version}
-								</GradientText>{" "}
-							</Title>
-						</Text>
+						<h1 className=" text-transparent bg-clip-text bg-gradient-to-br from-[#EE0C77] via-[#F24D56] to-[#EE0C77] text-[4rem] md:text-[8rem] font-vanguardcf font-bold tracking-wider py-10 ">
+							{index === 0
+								? "Cyber Cypher 2.0"
+								: "Cyber Cypher 1.0"}
+						</h1>
 						<div className="flex flex-col md:flex-row justify-center gap-12">
 							{cyberCypher.cards.map((card, cardIndex) => (
 								<CardComponent

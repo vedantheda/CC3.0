@@ -82,7 +82,7 @@ export const Text = ({
 	center?: boolean;
 }) => (
 	<div
-		className={`w-5/6 col gap-4 text-center mb-8 mx-auto ${
+		className={`w-5/6 col gap-4 text-center mx-auto ${
 			center ? "md:w-2/3" : "md:w-2/5 md:text-left md:my-auto"
 		}`}
 	>
@@ -162,7 +162,7 @@ export const Features = () => {
 						focuses on teaching artificial neural networks to see
 						patterns and make wise choices. Utilize Fetch.ai to
 						create novel answers while you work through an advanced
-						problem statement &apos;s complexities problem statement
+						problem statement&apos;s complexities problem statement
 						&apos; s complexities
 					</Details>
 				</Text>
