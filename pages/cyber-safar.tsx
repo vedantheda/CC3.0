@@ -46,13 +46,13 @@ const PastCC = ({
 					title: "EV Sustainability",
 					imageUrl:
 						"https://imgd.aeplcdn.com/664x374/n/cw/ec/149123/nexon-ev-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-					description: "Lorem ipsummmm",
+					description: "Develop a prototype to improve the accessibility of electric vehicles (EVs) in developing countries. Address challenges like limited charging infrastructure and affordability. Solutions might involve creating affordable EV models tailored to local needs or expediting the deployment of charging stations in urban and rural areas. The prototype should demonstrate how this solution can enhance EV use, making it more cost-effective and efficient in these regions.",
 				},
 				{
 					title: "ML related something",
 					imageUrl:
 						"https://cdn.sanity.io/images/tlr8oxjg/production/ada93729daf922ad0318c8c0295e5cb477921808-1456x816.png?w=3840&q=100&fit=clip&auto=format",
-					description: "Lorem ipsum",
+					description: "Create a prototype stock trading platform integrating natural language processing (NLP) to streamline decision-making for investors. Traditional platforms inundate users with data, necessitating time-consuming analysis. By leveraging NLP, the prototype aims to extract insights from natural language sources like news articles and social media swiftly. The platform's demonstration should exhibit how NLP facilitates more informed and efficient trading decisions for investors",
 				},
 			],
 		},

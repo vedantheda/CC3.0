@@ -162,7 +162,7 @@ export const Features = () => {
 						focuses on teaching artificial neural networks to see
 						patterns and make wise choices. Utilize Fetch.ai to
 						create novel answers while you work through an advanced
-						problem statement's complexities problem statement
+						problem statement &apos;s complexities problem statement
 						&apos; s complexities
 					</Details>
 				</Text>
