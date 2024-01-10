@@ -5,10 +5,8 @@ import AOS from "aos";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
-import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
-
-
+import { useEffect } from "react";
 
 const siteTitle = "Cyber-Cypher";
 const siteDescription =
