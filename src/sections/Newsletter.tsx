@@ -1,7 +1,6 @@
 import { NewsletterSpheres } from "../svg/NewsletterSpheres";
 import { Card } from "../components/Card";
 import { Section } from "../components/Section";
-import { WaitlistForm } from "../components/WaitlistForm";
 
 const Background = () => (
 	<div
@@ -36,6 +35,8 @@ export const Newsletter = () => {
 							href="https://wa.me/+917977093907"
 							target="_blank"
 							className="underline italic font-bold text-xl"
+							rel="noreferrer"
+
 						>
 							Text Kaushal Tiwari
 						</a>

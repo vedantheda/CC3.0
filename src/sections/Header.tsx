@@ -32,14 +32,12 @@ export const Header = ({
 			<div className="items-center block gap-1 row">
 				<Image
 					src="/images/logo.png"
-					alt="Vivid logo"
+					alt="cc logo"
 					height="60"
 					width="60"
 				/>
 				<div className="text-3xl font-bold">
-					<GradientText className="white">
-						Cyber Cypher 3.0
-					</GradientText>
+				
 				</div>
 			</div>
 		</Link>

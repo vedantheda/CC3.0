@@ -5,6 +5,7 @@ import { Newsletter } from "../src/sections/Newsletter";
 import { Testimonials } from "../src/sections/Testimonials";
 import { AnimatedGradient } from "../src/components/AnimatedGradient";
 import { AnimatedGradientR } from "../src/components/AnimatedGradientright";
+import Image from "next/image";
 const Home = ({
 	isDarkMode,
 	toggleDarkMode,
@@ -30,17 +31,20 @@ const Home = ({
 								<span className=""> Cypher 3.0 </span>
 							</h1>
 							<p className=" text-lg tracking-[0.3rem] font-extrabold  ">
-								NMIMS' Official Hackathon
+								NMIMS&quot; Official Hackathon
 							</p>
 							<button
 								type="button"
 								className="text-black bg-[#DE2F04] hover:opacity-50 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-extrabold rounded-lg text-lg px-5 py-2.5 text-center inline-flex items-center  mr-2 mb-2 mt-2"
 							>
 								Register Now!
-								<img
+								<Image
 									src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg"
 									className=" h-7 sm:h-10 pl-7"
-								></img>
+									alt="unstop logo"
+									width={50}
+									height={50}
+								/>
 							</button>{" "}
 						</section>
 					</div>

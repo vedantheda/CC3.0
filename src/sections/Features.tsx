@@ -158,11 +158,11 @@ export const Features = () => {
 						</GradientText>
 					</Title>
 					<Details>
-						A branch of machine learning called "deep learning"
+						A branch of machine learning called &quot;deep learning&quot;
 						focuses on teaching artificial neural networks to see
 						patterns and make wise choices. Utilize Fetch.ai to
 						create novel answers while you work through an advanced
-						problem statement's complexities{" "}
+						problem statement &quot;s complexities{" "}
 					</Details>
 				</Text>
 			</FeatureSection>
