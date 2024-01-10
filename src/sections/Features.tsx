@@ -9,7 +9,7 @@ import { Title } from "../components/Title";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
-const FeatureSection = ({
+export const FeatureSection = ({
   children,
   grayer,
   right,
@@ -71,7 +71,7 @@ const FeatureDemo = (
   );
 };
 
-const Text = ({
+export const Text = ({
   children,
   center,
 }: {
