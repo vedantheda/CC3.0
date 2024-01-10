@@ -10,7 +10,7 @@ import { Title } from "../components/Title";
 // Built with Vivid (https://vivid.lol) ⚡️
 
 const BlockTitle = ({ children }: { children: ReactNode }) => {
-	return <h3 className="text-xl font-bold text-strong">{children}</h3>;
+	return <h3 className="text-xl font-vanguard text-strong">{children}</h3>;
 };
 
 const BlockText = ({ children }: { children: ReactNode }) => {

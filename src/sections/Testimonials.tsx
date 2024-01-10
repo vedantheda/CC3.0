@@ -40,7 +40,7 @@ const TestimonialText = ({
 }) => {
 	return (
 		<>
-			<blockquote className="font-medium">&quot;{quote}&quot;</blockquote>
+			<blockquote className="font-vanguard">&quot;{quote}&quot;</blockquote>
 			<div className="">
 				<cite className="not-italic font-bold">— {name}</cite>
 			</div>

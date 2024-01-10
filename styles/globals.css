@@ -1,6 +1,9 @@
 /* Download Avenir */
 @import url("http://fonts.cdnfonts.com/css/avenir-next-cyr");
-
+@font-face {
+	font-family: 'vanguard';
+	src: url('../public/fonts/Fontspring-DEMO-vanguardcf-bold.otf') format('otf');
+}
 /* Import Tailwind classes */
 @tailwind base;
 @tailwind components;

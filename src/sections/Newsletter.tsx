@@ -17,7 +17,7 @@ export const Newsletter = () => {
 			<Card className="w-full px-4 py-16 overflow-hidden sm:px-16">
 				<Background />
 				<div className="gap-6 text-center md:text-left col md:w-1/2 ">
-					<h2 className="text-3xl font-bold text-gray-100">
+					<h2 className="text-3xl font-vanguard font-bold text-gray-100">
 						Have Any Queries?
 					</h2>
 					<p className="text-lg text-light ">
@@ -38,7 +38,7 @@ export const Newsletter = () => {
 							rel="noreferrer"
 
 						>
-							Text Kaushal Tiwari
+							 Whatsapp
 						</a>
 					</p>
 					<p className="text-lg text-light">
@@ -57,7 +57,7 @@ export const Newsletter = () => {
 							className="underline italic font-bold text-xl"
 						>
 							{" "}
-							Or Call Us{" "}
+							Phone{" "}
 						</a>
 					</p>
 				</div>
