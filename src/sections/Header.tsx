@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
 import { GradientText } from "../components/GradientText";
 
@@ -28,6 +28,7 @@ export const Header = ({
 	useEffectOnce(() => setReloaded(true));
 
 	const Logo = () => (
+		
 		<Link href="/">
 			<div className="items-center block gap-1 row">
 				<Image
@@ -40,6 +41,20 @@ export const Header = ({
 			</div>
 		</Link>
 	);
+	const [isVisible, setIsVisible] = useState(false);
+	useEffect(() => {
+		// Get current time in IST
+		const currentTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+	
+		// Set the target time (18:00 IST)
+		const targetTime = new Date(currentTime);
+		targetTime.setHours(18, 0, 0, 0);
+	
+		// Compare current time with target time
+		if (new Date() >= targetTime) {
+		  setIsVisible(true);
+		}
+	  }, []); // Empty depen
 
 	const Navigation = () => {
 		const [isOpen, setIsOpen] = useState(false);
@@ -88,8 +103,13 @@ export const Header = ({
 							<Link href="/schedule">Schedule</Link>
 						</li>
 						<li>
-							<Link href="/cyber-safar">Cyber-Safar</Link>
+							<Link href="/old">Prior Iteration</Link>
 						</li>
+						{isVisible && (
+        <li>
+          <Link href="/problems">Problem Statements</Link>
+        </li>
+      )}	
 						<li>
 							<Link
 								href="http://taqneeqfest.com/cybercypher/register"

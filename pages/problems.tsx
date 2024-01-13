@@ -41,41 +41,23 @@ const PastCC = ({
 }) => {
 	const cyberCypherData = [
 		{
-			version: "CYBER CYPHER 2.0",
+			version: "Problem statments",
 			cards: [
 				{
-					title: "EV Sustainability",
+					title: "Healthcare",
 					imageUrl:
-						"https://imgd.aeplcdn.com/664x374/n/cw/ec/149123/nexon-ev-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-					description: "Develop a prototype to improve the accessibility of electric vehicles (EVs) in developing countries. Address challenges like limited charging infrastructure and affordability. Solutions might involve creating affordable EV models tailored to local needs or expediting the deployment of charging stations in urban and rural areas. The prototype should demonstrate how this solution can enhance EV use, making it more cost-effective and efficient in these regions.",
+						"",
+					description: "Monica, a Software Developer at Fetch.ai is experiencing difficulties booking an appointment with her doctor and accessing her medical records online, she realizes that the user interface of the healthcare portal is confusing and not user-friendly. Develop a solution that enhances the patient experience and enables them to efficiently manage their healthcare information by building a portal with secure, centralized records managed by patients and accessible to doctors.",
 				},
 				{
-					title: "ML related something",
+					title: "Deep Learning Using Fetch AI",
 					imageUrl:
-						"https://cdn.sanity.io/images/tlr8oxjg/production/ada93729daf922ad0318c8c0295e5cb477921808-1456x816.png?w=3840&q=100&fit=clip&auto=format",
-					description: "Create a prototype stock trading platform integrating natural language processing (NLP) to streamline decision-making for investors. Traditional platforms inundate users with data, necessitating time-consuming analysis. By leveraging NLP, the prototype aims to extract insights from natural language sources like news articles and social media swiftly. The platform's demonstration should exhibit how NLP facilitates more informed and efficient trading decisions for investors",
+						"",
+					description: "Aryan is the owner of a family-owned grocery store located in Mumbai. He grew up in an underprivileged background, and he remembers vividly the struggles that his family store faced due to poor inventory management and untimely food orders. These issues led to a decline in business, and ultimately, poverty. He approached fetch.ai to help him out with his grocery store issues. Develop a solution that utilizes the UI Agent of fetch.ai and create a deep learning model to help save his business.",
 				},
 			],
 		},
-		{
-			version: "CYBER CYPHER 1.0",
-			cards: [
-				{
-					title: "Elementary Level",
-					imageUrl:
-						"https://media.istockphoto.com/id/837345268/photo/noir-movie-character.jpg?s=612x612&w=0&k=20&c=WGaAh-xWelYuEoxhUE69T4e4k45Bp-MTC6KLG7edN8Y=",
-					description:
-						"Consider two spies that are suspected of espionage with their safe house under constant supervision. Establish a medium of communication that prevents any suspicion and may or may not work on the same device.",
-				},
-				{
-					title: "Advanced Level",
-					imageUrl:
-						"https://www.shutterstock.com/image-photo/kyiv-ukraine-september-5-2019-260nw-1498591895.jpg",
-					description:
-						"Construct a model which blocks potential spoilers on social media platforms.",
-				},
-			],
-		},
+		
 	];
 
 	return (
@@ -91,7 +73,7 @@ const PastCC = ({
 					<FeatureSection grayer center key={index}>
 						<h1 className=" text-transparent bg-clip-text bg-gradient-to-br from-[#EE0C77] via-[#F24D56] to-[#EE0C77] text-[4rem] md:text-[8rem] font-vanguardcf font-bold tracking-wider py-10 ">
 							{index === 0
-								? "Cyber Cypher 2.0"
+								? "Problem Statements"
 								: "Cyber Cypher 1.0"}
 						</h1>
 						<div className="flex flex-col md:flex-row justify-center gap-12">
