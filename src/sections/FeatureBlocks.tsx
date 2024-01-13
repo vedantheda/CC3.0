@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { Jetbrains, AppleIcon, Unstopable } from "../svg/FeatureIcons";
+import { Jetbrains, AppleIcon, Unstopable,BMW } from "../svg/FeatureIcons";
 import { Card } from "../components/Card";
 import { Details } from "../components/Details";
 import { GradientText } from "../components/GradientText";
@@ -51,6 +51,10 @@ export const FeatureBlocks = () => {
         <Block>
           <Jetbrains />
           <BlockTitle>Creatives Partner</BlockTitle>
+        </Block>
+        <Block>
+          <BMW />
+          <BlockTitle>AutoMobile Partner</BlockTitle>
         </Block>
       </div>
     </Section>
