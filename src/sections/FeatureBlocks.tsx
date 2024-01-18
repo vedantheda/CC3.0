@@ -56,6 +56,10 @@ export const FeatureBlocks = () => {
           <BMW />
           <BlockTitle>AutoMobile Partner</BlockTitle>
         </Block>
+        <Block>
+          <img src="./images/aeon_gaming.jpeg" width={72}/>
+          <BlockTitle>Gaming Partner</BlockTitle>
+        </Block>
       </div>
     </Section>
   );
